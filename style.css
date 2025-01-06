@@ -6,11 +6,122 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* CSS variables to use any where in website (if you want to change theme one change here will apply to entire website) */
 :root {
-    --heading : #393A56;
-    --text : #7E7F85;
-    --theme : #FD5353;
-    --bg : #F7F8F9;
-    --footerBg : #415161;
+    --heading: #393A56;
+    --text: #7E7F85;
+    --theme: #FD5353;
+    --bg: #F7F8F9;
+    --footerBg: #415161;
+}
+
+body {
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading);
+}
+
+p {
+    color: var(--text);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background: var(--bg);
+    width: 100vw;
+    height: 90vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li {
+    margin: 0 20px;
+}
+
+.navlinks img {
+    width: 50px;
+}
+
+.navlinks li a {
+    color: var(--heading);
+}
+
+/* Header - Content */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content img {
+    max-width: 90%;
+}
+
+.header-info {
+    flex: 60%;
+
+}
+
+.line {
+    width: 150px;
+    background-color: var(--theme);
+    height: 6px;
+    border-radius: 5px;
+}
+
+.header-info h1,
+.header-content p {
+    max-width: 700px;
+}
+
+.header-info h1 {
+    font-size: 50px;
+
+}
+
+.header-info h3,
+.header-content p {
+    margin: 20px 0;
+
+}
+
+.ctn {
+    padding: 16px 20px;
+    border: none;
+    background-color: var(--theme);
+    color: var(--bg);
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
